@@ -1,0 +1,21 @@
+{
+  "name": "expresssample",
+  "version": "1.0.0",
+  "description": "use express socket and express to create",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "client/",
+    "server/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike1226/NodejsSample.git"
+  },
+  "author": "yanhaifeng",
+  "license": "ISC"
+}
