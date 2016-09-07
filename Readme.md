@@ -1,19 +1,23 @@
 Server: localhost:4000
 	NodeJs + Express + Socket.io
 
-	app
-	  api
-	  module
-	  services
-	  log
+
+/
+  Post
+     message:message
+  use websocket send message to client
+
+/showtime
+   Post
+      show:boolean
+
+    use websocket swich time send status.
 
 
 Client: localhost:3000
 	NodeJs + Express + AnglarJs
 
-	app
-	  factory
-	  controller
-	  html
-	    index.html
-	    console.html
+	use websocket show message and server time.
+
+
+	
