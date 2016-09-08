@@ -28,9 +28,9 @@ app.factory('socket', ['$rootScope',
 app.controller('HelloController', function($scope, socket) {
 
     // タイムを表す
-    socket.on('time', function(data) {
+    socket.on('signaltime', function(data) {
         $scope.$apply(function() {
-            $scope.time = data.time;
+            $scope.time = data.signaltime;
         });
     });
 
