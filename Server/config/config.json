@@ -1,0 +1,12 @@
+{
+	"auth": {
+    "github": {
+      "clientid" : "a343c2c5a7f2efde3386",
+      "clientsecret" : "283d4d9d85e40c14bc05031794d7dc0d4145d0ca",
+      "callback" : "http://localhost:4000/auth/github/callback"
+    }
+  },  
+  "app": {
+    "port": 4000
+  }
+}
