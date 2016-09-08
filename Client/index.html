@@ -5,6 +5,7 @@
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-cookies.js"></script>
     <script src="/js/index.js"></script>   
 </head>
 
@@ -13,7 +14,14 @@
     <br/> 
     IsTime: {{time}}  
     <hr/>
-    <a href='http://localhost:4000/auth/github'>Login With GitHub</a>
+    <div ng-if="login">
+        Welcome {{login}}
+    </div>
+    <div ng-if="!login">
+        <a href='http://localhost:4000/auth/github'>Login With GitHub</a>
+    </div>
+    
+
 </body>
 
 </html>

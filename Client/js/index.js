@@ -1,5 +1,5 @@
 // Routerを作る
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'ngCookies']);
 app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.when('/', {
@@ -25,7 +25,9 @@ app.factory('socket', ['$rootScope',
 ]);
 
 // コントローラを設定
-app.controller('HelloController', function($scope, socket) {
+app.controller('HelloController', function($scope, $cookies, socket) {
+
+    $scope.login = $cookies.get('loginedUser');
 
     // タイムを表す
     socket.on('signaltime', function(data) {
